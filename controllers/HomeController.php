@@ -6,7 +6,8 @@ class HomeController extends BaseController
     {
         return $this->view('home', [
             'title' => 'Chocolatte',
-            'welcome' => 'Bienvenu chez'
+            'welcome' => 'Bienvenu chez',
+            'employees'=> Employee::getHomepageEmployees(),
         ]);
 
     }
